@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+		<ThingDef ParentName="OrganicProductBase">
+			<defName>CookedSmokeleaf</defName>
+			<label>cooked smokeleaf</defName>
+			<description>Smokeleaf that has been decarboxylated and is ready to turn into edibles or THC Oil.</description>
+			
+			<graphicData>
+				<texPath>Things/Item/Resource/../..</texPath>
+			</graphicData>
+			
+			<statBases>
+				<MarketValue>4</MarketValue>
+				<Mass>0.01</Mass>
+				<Flammability>1</Flammability>
+				<Nutrition>.25</Nutrition>
+			</statBases>
+			
+			
+</Defs>

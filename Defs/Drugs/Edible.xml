@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DrugBase">
+		<defName>SE_Edible</defName>
+		<label>edible</label>
+		<description>A nice baked good with that lovely smokeleaf in it for a better high and no carcinoma!</description>
+		
+		<descriptionHyperlinks>
+			<HediffDef>SmokeleafHigh</HediffDef>
+			<HediffDef>SmokeleafTolerance</HediffDef>
+			<HediffDef>SmokeleafAddiction</HediffDef>
+		</descriptionHyperlinks>
+		
+		<graphicData>
+			<texPath>Things/Item/Drugs/../..</texPath>
+		</graphicData>
+		
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Mass>0.01</Mass>
+			<DeteriorationRate>6</DeteriorationRate>
+			<Flammability>.5</Flammability>
+			<Nutrition>.25</Nutrition>
+		</statBases>
+	
+	</ThingDef>
+</Defs>

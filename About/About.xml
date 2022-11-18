@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>SmokeleafExpanded</name>
+  <packageId>ETH.SmokeleafExpanded</packageId>
+  <author>Ether_Chicken</author>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+  <description>
+  Just expands on smokeleaf -- update description when mod done
+  </description>
+</ModMetaData>

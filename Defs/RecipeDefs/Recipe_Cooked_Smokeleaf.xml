@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>SE_CookSmokeleaf</defName>
+		<label>cook smokeleaf</label>
+		<description>Decarboxylate your smokeleaf to turn into edibles or THC Oil.</description>
+		
+		<descriptionHyperlinks>
+			<ThingDef>SmokeleafLeaves</ThingDef>
+		</descriptionHyperlinks>
+		
+		<jobString>Making an edible.</jobString>
+		<workSkill>Cooking</workSkill>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>500</workAmount>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		
+		<recipeUsers>
+		<li>ElectricStove</li>
+		<li>FueledStove</li>
+		<li>DrubLab</li>
+		</recipeUsers>
+		
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafLeaves</li>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>SmokeleafLeaves</li>
+				
+			</thingDefs>
+			<categories>
+				
+			</categories>
+		</fixedIngredientFilter>
+		
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>SmokeleafLeaves</li>
+				
+			</thingDefs>
+			<categories>
+				
+			</categories>
+		</defaultIngredientFilter>
+		
+		<products>
+			<SmokeleafLeaves>25</SmokeleafLeaves>
+		</products>
+	</RecipeDef>
+</Defs>

@@ -1,0 +1,8 @@
+C:\Users\vanho\Desktop\Rimworld Things\My Rimworld Mods\Smokeleaf Expanded\Source\Smokeleaf Expanded\Smokeleaf Expanded\bin\Debug\Smokeleaf_Expanded.dll
+C:\Users\vanho\Desktop\Rimworld Things\My Rimworld Mods\Smokeleaf Expanded\Source\Smokeleaf Expanded\Smokeleaf Expanded\bin\Debug\Smokeleaf_Expanded.pdb
+C:\Users\vanho\Desktop\Rimworld Things\My Rimworld Mods\Smokeleaf Expanded\Source\Smokeleaf Expanded\Smokeleaf Expanded\obj\Debug\Smokeleaf Expanded.csproj.AssemblyReference.cache
+C:\Users\vanho\Desktop\Rimworld Things\My Rimworld Mods\Smokeleaf Expanded\Source\Smokeleaf Expanded\Smokeleaf Expanded\obj\Debug\Smokeleaf Expanded.csproj.CoreCompileInputs.cache
+C:\Users\vanho\Desktop\Rimworld Things\My Rimworld Mods\Smokeleaf Expanded\Source\Smokeleaf Expanded\Smokeleaf Expanded\obj\Debug\Smokeleaf_Expanded.dll
+C:\Users\vanho\Desktop\Rimworld Things\My Rimworld Mods\Smokeleaf Expanded\Source\Smokeleaf Expanded\Smokeleaf Expanded\obj\Debug\Smokeleaf_Expanded.pdb
+C:\Users\vanho\Desktop\Rimworld Things\My Rimworld Mods\Smokeleaf Expanded\Assemblies\Smokeleaf_Expanded.dll
+C:\Users\vanho\Desktop\Rimworld Things\My Rimworld Mods\Smokeleaf Expanded\Assemblies\Smokeleaf_Expanded.pdb

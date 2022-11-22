@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="DrugBase">
+		<defName>SE_SmokeleafOil</defName>
+		<label>smokeleaf oil</label>
+		<description>Extracted smokeleaf oil for use in cooking more advanced forms of smokeleaf.</description>
+		
+		<descriptionHyperlinks>
+			<HediffDef>SmokeleafHigh</HediffDef>
+			<HediffDef>SmokeleafTolerance</HediffDef>
+			<HediffDef>SmokeleafAddiction</HediffDef>
+			<ThingDef>SE_CookedSmokeleaf</ThingDef>
+		</descriptionHyperlinks>
+		
+		<graphicData>
+			<texPath>Things/Item/Resource/SE_SmokeleafOil</texPath>
+		</graphicData>
+		
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Mass>0.01</Mass>
+			<DeteriorationRate>6</DeteriorationRate>
+			<Flammability>.5</Flammability>
+		</statBases>
+	
+		<techLevel>Neolithic</techLevel>
+	
+	</ThingDef>
+</Defs>

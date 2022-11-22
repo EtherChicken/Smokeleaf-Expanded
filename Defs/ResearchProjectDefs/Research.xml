@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>SE_SmokeleafResearch</defName>
+		<label>smokeleafology</label>
+		<tab>SE_Smokeleaf</tab>
+		<techLevel>Medieval</techLevel>
+		<description>Allows you to cook smokeleaf and opens the door to many smokeleaf possibilities.</description>
+		<baseCost>500</baseCost>
+		<researchViewX>0</researchViewX>
+		<researchViewY>2</researchViewY>
+<!--	<prerequisites>
+		
+		</prerequisites> -->
+	</ResearchProjectDef>
+
+
+	<ResearchProjectDef>
+		<defName>SE_EdibleCooking</defName>
+		<label>edible cooking</label>
+		<tab>SE_Smokeleaf</tab>
+		<techLevel>Industrial</techLevel>
+		<description>Allows you to create edibles.</description>
+		<baseCost>500</baseCost>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1.5</researchViewY>
+		<prerequisites>
+			<li>SE_SmokeleafResearch</li>
+		</prerequisites> 
+	</ResearchProjectDef>
+	
+	
+	<ResearchProjectDef>
+		<defName>SE_OilExtraction</defName>
+		<label>oil extraction</label>
+		<tab>SE_Smokeleaf</tab>
+		<techLevel>Industrial</techLevel>
+		<description>Allows the extraction of Smokeleaf Oil.</description>
+		<baseCost>750</baseCost>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2.5</researchViewY>
+		<prerequisites>
+			<li>SE_SmokeleafResearch</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	
+	<ResearchProjectDef>
+		<defName>SE_SmokeleafBrewing</defName>
+		<label>smokeleaf brewing</label>
+		<tab>SE_Smokeleaf</tab>
+		<techLevel>Industrial</techLevel>
+		<description>Allows you to brew smokeleaf-infused drinks.</description>
+		<baseCost>750</baseCost>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2.5</researchViewY>
+		<prerequisites>
+			<li>SE_OilExtraction</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+</Defs>

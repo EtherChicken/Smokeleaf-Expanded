@@ -2,18 +2,19 @@
 <Defs>
 
 	<RecipeDef>
-		<defName>SE_CookSmokeleaf</defName>
-		<label>cooksmokeleaf</label>
-		<description>Decarboxylate your smokeleaf to turn into edibles or THC Oil.</description>
+		<defName>SE_MakeSmokeleafSoda</defName>
+		<label>make smokeleaf soda</label>
+		<description>Infuse a drink with Smokeleaf.</description>
 		
 		<descriptionHyperlinks>
-			<ThingDef>SmokeleafLeaves</ThingDef>
+			<ThingDef></ThingDef>
+			<ThingDef>SE_CookedSmokeleaf</ThingDef>
 		</descriptionHyperlinks>
 		
-		<jobString>Making an edible.</jobString>
+		<jobString>Creating Smokeleaf Soda.</jobString>
 		<workSkill>Cooking</workSkill>
 		<workSpeedStat>CookSpeed</workSpeedStat>
-		<workAmount>500</workAmount>
+		<workAmount>1000</workAmount>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_Brewing</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
@@ -28,36 +29,42 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>SmokeleafLeaves</li>
+						<li>SE_SmokeleafOil</li>
 					</thingDefs>
 				</filter>
-				<count>25</count>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li></li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
 			</li>
 		</ingredients>
 		
 		<fixedIngredientFilter>			
 			<thingDefs>
-				<li>SmokeleafLeaves</li>
+				<li>SE_SmokeleafOil</li>
 				
 			</thingDefs>
-			<categories>
+<!--		<categories>
 				
-			</categories>
+			</categories> -->
 		</fixedIngredientFilter>
 		
 		<defaultIngredientFilter>			
 			<thingDefs>
-				<li>SmokeleafLeaves</li>
-				
+				<li>SE_SmokeleafOil</li>
 			</thingDefs>
-			<categories>
+	<!--	<categories>
 				
-			</categories>
+			</categories> -->
 		</defaultIngredientFilter>
 		
 		<products>
-			<SE_CookedSmokeleaf>25</SE_CookedSmokeleaf>
+			<SE_SmokeleafSoda>5</SE_SmokeleafSoda>
 		</products>
-
 	</RecipeDef>
 </Defs>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="DrugBase">
-		<defName>SE_Edible</defName>
-		<label>edible</label>
-		<description>A nice baked good with that lovely smokeleaf in it for a better high and no carcinoma!</description>
+		<defName>SE_SmokeleafSoda</defName>
+		<label>smokeleaf soda</label>
+		<description>Brings a new meaning to "Cracking a cold one open with the pawns".</description>
 		
 		<descriptionHyperlinks>
 			<HediffDef>SmokeleafHigh</HediffDef>
@@ -12,11 +12,11 @@
 		</descriptionHyperlinks>
 		
 		<graphicData>
-			<texPath>Things/Item/Drugs/SE_Edible</texPath>
+			<texPath>Things/Item/Drugs/SE_SmokeleafSoda</texPath>
 		</graphicData>
 		
 		<statBases>
-			<MarketValue>20</MarketValue>
+			<MarketValue>30</MarketValue>
 			<Mass>0.01</Mass>
 			<DeteriorationRate>6</DeteriorationRate>
 			<Flammability>.5</Flammability>
@@ -24,16 +24,16 @@
 		</statBases>
 		
 		<ingestible>
-			<foodType>Plant, Processed</foodType>
+			<foodType>Fluid, Processed</foodType>
 			<joyKind>Chemical</joyKind>
 			<joy>.90</joy>
 			<baseIngestTicks>400</baseIngestTicks>
 			<nurseable>true</nurseable>
 			<drugCategory>Social</drugCategory>
 			<ingestEffect>EatVegetarian</ingestEffect>
-			<ingestSound>Meal_Eat</ingestSound>
-			<ingestCommandString>Eat {0}</ingestCommandString>
-			<ingestReportString>Eating {0}.</ingestReportString>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
 		</ingestible>
 	
 		<techLevel>Neolithic</techLevel>

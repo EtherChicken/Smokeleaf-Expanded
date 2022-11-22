@@ -23,7 +23,7 @@
 		<recipeUsers>
 		<li>ElectricStove</li>
 		<li>FueledStove</li>
-		<li>DrubLab</li>
+		<li>DrugLab</li>
 		</recipeUsers>
 		
 		<ingredients>
@@ -65,7 +65,7 @@
 		</defaultIngredientFilter>
 		
 		<products>
-			<SE_Edible>5<SE_Edible>
+			<SE_Edible>5</SE_Edible>
 		</products>
 	</RecipeDef>
 </Defs>

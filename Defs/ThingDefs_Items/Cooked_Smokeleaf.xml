@@ -2,12 +2,12 @@
 <Defs>
 	
 		<ThingDef ParentName="OrganicProductBase">
-			<defName>CookedSmokeleaf</defName>
-			<label>cooked smokeleaf</defName>
+			<defName>SE_CookedSmokeleaf</defName>
+			<label>cooked smokeleaf</label>
 			<description>Smokeleaf that has been decarboxylated and is ready to turn into edibles or THC Oil.</description>
 			
 			<graphicData>
-				<texPath>Things/Item/Resource/../..</texPath>
+				<texPath>Things/Item/Resource/SE_CookedSmokeleaf</texPath>
 			</graphicData>
 			
 			<statBases>
@@ -17,5 +17,8 @@
 				<Nutrition>.25</Nutrition>
 			</statBases>
 			
+			<techLevel>Neolithic</techLevel>
+
+		</ThingDef>
 			
 </Defs>

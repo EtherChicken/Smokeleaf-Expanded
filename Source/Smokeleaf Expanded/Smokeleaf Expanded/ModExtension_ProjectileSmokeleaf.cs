@@ -1,7 +1,6 @@
-﻿using RimWorld;
-using Verse;
+﻿using Verse;
 
-namespace Smokeleaf_Expanded
+namespace ETH_Smokeleaf_Expanded
 {
     [StaticConstructorOnStartup]
     public static class MyMod

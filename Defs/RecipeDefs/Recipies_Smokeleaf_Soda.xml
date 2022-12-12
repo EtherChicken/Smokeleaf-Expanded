@@ -7,7 +7,6 @@
 		<description>Infuse a drink with Smokeleaf.</description>
 		
 		<descriptionHyperlinks>
-			<ThingDef></ThingDef>
 			<ThingDef>SE_CookedSmokeleaf</ThingDef>
 		</descriptionHyperlinks>
 		
@@ -30,14 +29,6 @@
 				<filter>
 					<thingDefs>
 						<li>SE_SmokeleafOil</li>
-					</thingDefs>
-				</filter>
-				<count>5</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li></li>
 					</thingDefs>
 				</filter>
 				<count>5</count>

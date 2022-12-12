@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ItemProcessor.CombinationDef>
+		<defName>SE_SmokeleafToCooked</defName>
+		<building>SE_SmokeleafCooker</building>
+		<items>
+			<li>SmokeleafLeaves</li>
+		</items>
+		<amount>
+			<li>25</li>
+		</amount>
+		<result>SE_CookedSmokeleaf</result>
+		<yield>25</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>.041666</singleTimeIfNotQualityIncreasing> 
+		<!-- Should Be 1 RimWorld hour, 2500 ticks if I understand Oscar's code. he has time at 3f which should be 3 days, so 1f is one day, -->
+	</ItemProcessor.CombinationDef>
+</Defs>

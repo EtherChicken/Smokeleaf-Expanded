@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseMakeableGrenade">
+		<defName>SE_SmokeleafGrenade</defName>
+			<modExtensions>
+				<li Class="ETH_Smokeleaf_Expanded.ModExtension_ProjectileSmokeleaf">
+				<addHediffChance>1</addHediffChance>
+				<hediffToAdd>SmokeleafHigh</hediffToAdd>
+				<!-- <thingClass></thingClass> -->
+				</li>
+			</modExtensions>
+		<label>smokeleaf grenade</label>
+		<description>A modified frag grenade with a canister of smokeleaf oil inside that vaporizes when the grenade explodes and creates a cloud of smokeleaf smoke to stone your enemies while they get blown to shreds!</description>
+		<recipeMaker>
+			<researchPrerequisite>Machining</researchPrerequisite>
+		</recipeMaker>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Grenades/SE_Weapon_GrenadeSmokeleaf</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.3</uiIconScale>
+		<soundInteract>ThrowGrenade</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<Mass>1</Mass>
+			<RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+			<WorkToMake>6000</WorkToMake>
+		</statBases>
+		<costList>
+			<Steel>20</Steel>
+			<Chemfuel>40</Chemfuel>
+			<SE_SmokeleafOil>10</SE_SmokeleafOil>
+		</costList>
+		<weaponTags>
+			<li>GrenadeDestructive</li>
+			<li>EmpireGrenadeDestructive</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<smeltable>true</smeltable>
+		<verbs>
+			<li>
+				<label>throw smokeleaf grenade</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>12.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_GrenadeSmokeleaf</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>3.24</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef Name="BaseSmokeleafGrenadeProjectile" ParentName="BaseGrenadeProjectile" Abstract="True">
+		<thingClass>ETH_Smokeleaf_Expanded.Projectile_Smokeleaf</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/SE_SmokeleafGrenade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>2.24</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<explosionDelay>100</explosionDelay>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseSmokeleafGrenadeProjectile">
+		<defName>Proj_GrenadeSmokeleaf</defName>
+		<label>smokeleaf grenade</label>
+	</ThingDef>
+
+</Defs>

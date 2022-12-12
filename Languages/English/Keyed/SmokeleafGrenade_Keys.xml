@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<ETH_Projectile_Smokeleaf_SuccessMessage>{0} made {1} go 5G!</ETH_Projectile_Smokeleaf_SuccessMessage>
+	<ETH_Projectile_Smokeleaf_FailureMote>Failure: {0} chance</ETH_Projectile_Smokeleaf_FailureMote>
+</LanguageData>

@@ -3,11 +3,10 @@
 namespace ETH_Smokeleaf_Expanded
 {
     [StaticConstructorOnStartup]
-    public static class MyMod
+    // ReSharper disable once InconsistentNaming
+    public class ModExtension_ProjectileSmokeleaf : DefModExtension
     {
-        static MyMod()
-        {
-            Log.Message("Hello World!");
-        }
+        public float addHediffChance = 1f;
+        public HediffDef hediffToAdd;
     }
 }   

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Brewing Expanded</li>
+		</mods>
+		
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "SE_MakeSmokeleafSoda"]/ingredients</xpath>
+					<value>
+					
+						<li>
+							<filter>
+								<thingDefs>
+									<li>VBE_Soda</li>
+								</thingDefs>
+							</filter>
+							<count>5</count>
+						</li>
+					
+					</value>
+				</li>
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "SE_MakeSmokeleafSoda"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+					
+						<li>VBE_Soda</li>
+					
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "SE_MakeSmokeleafSoda"]/defaultIngredientFilter/thingDefs</xpath>
+					<value>
+					
+						<li>VBE_Soda</li>
+					
+					</value>
+				</li>
+			
+			</operations>
+		
+		</match>
+		
+		
+		
+	
+	</Operation>
+
+</Patch>

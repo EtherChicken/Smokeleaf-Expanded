@@ -13,6 +13,7 @@
 		
 		<graphicData>
 			<texPath>Things/Item/Drugs/SE_Edible</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		
 		<statBases>
@@ -34,9 +35,36 @@
 			<ingestSound>Meal_Eat</ingestSound>
 			<ingestCommandString>Eat {0}</ingestCommandString>
 			<ingestReportString>Eating {0}.</ingestReportString>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				  <hediffDef>SmokeleafHigh</hediffDef>
+				  <severity>.75</severity>
+				  <toleranceChemical>Smokeleaf</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+				  <need>Rest</need>
+				  <offset>-0.1</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				  <hediffDef>SmokeleafTolerance</hediffDef>
+				  <severity>0.030</severity>
+				  <divideByBodySize>true</divideByBodySize>
+				  <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
 		</ingestible>
 	
 		<techLevel>Neolithic</techLevel>
+		<comps>
+		  <li Class="CompProperties_Drug">
+			<chemical>Smokeleaf</chemical>
+			<addictiveness>0.020</addictiveness>
+			<minToleranceToAddict>0.15</minToleranceToAddict>
+			<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+			<needLevelOffset>0.9</needLevelOffset>
+			<listOrder>20</listOrder>
+		  </li>
+		</comps>
 	
 	</ThingDef>
 </Defs>

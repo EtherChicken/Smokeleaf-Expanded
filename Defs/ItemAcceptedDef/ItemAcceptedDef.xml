@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>IP_SmokeleafCookerFirstItem</defName>
+		<building>SE_SmokeleafCooker</building>
+		<slot>1</slot>
+		<items>
+			<li>SmokeleafLeaves</li>
+		</items>
+	</ItemProcessor.ItemAcceptedDef>
+
+
+
+</Defs>

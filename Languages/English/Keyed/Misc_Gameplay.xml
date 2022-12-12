@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<SE_InsertSmokeleafDesc>Smokeleaf to Insert</SE_InsertSmokeleafDesc>
+	<SE_StartInsertion>Bring Syrup</SE_StartInsertion>
+	<SE_StartInsertionDesc>Bring smokeleaf to the smokeleaf cooker to start processing</SE_StartInsertionDesc>
+	<SE_CancelBringingSmokeleaf>Cancel Bringing Smokeleaf</SE_CancelBringingSmokeleaf>
+	<SE_CancelBringingSmokeleafDesc>Cancel bringing smokeleaf to the smokeleaf cooker</SE_CancelBringingSmokeleafDesc>
+	<SE_SmokeleafFailurePower>The Smokeleaf has been ruined due to a power failure in the smokeleaf cooker</SE_SmokeleafFailurePower>
+
+</LanguageData>

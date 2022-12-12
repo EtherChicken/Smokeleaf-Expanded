@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+<!-- 	<modExtensions>
+		<li Class="ETH_Smokeleaf_Expanded.ModExtension_ProjectileSmokeleaf">
+			<addHediffChance>1</addHediffChance>
+			<hediffToAdd>SmokeleafHigh</hediffToAdd>
+			<thingClass>ETH_Smokeleaf_Expanded.Projectile_Smokeleaf</thingClass>
+		</li>
+	</modExtensions> 
+
+	<DamageDef>
+		<defName>SE_SmokeleafSmoke</defName>
+		<label>smokeleaf smoke</label>
+		<canInterruptJobs>false</canInterruptJobs>
+		<makesBlood>false</makesBlood>
+		<defaultDamage>0</defaultDamage>
+		<explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+		<explosionColorEdge>(1, 1, 1, 0.05)</explosionColorEdge>
+		<harmsHealth>false</harmsHealth>
+		<soundExplosion>Explosion_Smoke</soundExplosion>
+		<combatLogRules>Damage_Smoke</combatLogRules>
+	</DamageDef>
+
+-->
+
+</Defs>

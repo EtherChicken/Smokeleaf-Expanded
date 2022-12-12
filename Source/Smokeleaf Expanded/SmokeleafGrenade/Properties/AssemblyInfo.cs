@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ETH_Smokeleaf_Expanded")]
+[assembly: AssemblyTitle("SmokeleafGrenade")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ETH_Smokeleaf_Expanded")]
+[assembly: AssemblyProduct("SmokeleafGrenade")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("09EDCE0A-9CE8-4C68-BDA8-2EC5DF3B4A5F")]
+[assembly: Guid("8463D8F3-B7A4-4477-9895-F65493AE891A")]
 
 // Version information for an assembly consists of the following four values:
 //

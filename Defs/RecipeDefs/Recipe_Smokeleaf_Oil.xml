@@ -7,8 +7,6 @@
 		<description>Extract smokeleaf oil from a cooked smokeleaf plant.</description>
 		
 		<descriptionHyperlinks>
-			<ThingDef>SE_Edible</ThingDef>
-			<ThingDef>Chocolate</ThingDef>
 			<ThingDef>SE_CookedSmokeleaf</ThingDef>
 		</descriptionHyperlinks>
 		

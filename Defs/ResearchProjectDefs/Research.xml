@@ -2,7 +2,7 @@
 <Defs>
 	<ResearchProjectDef>
 		<defName>SE_SmokeleafResearch</defName>
-		<label>smokeleafology</label>
+		<label>smokeology</label>
 		<tab>SE_Smokeleaf</tab>
 		<techLevel>Medieval</techLevel>
 		<description>Allows you to cook smokeleaf and opens the door to many smokeleaf possibilities.</description>

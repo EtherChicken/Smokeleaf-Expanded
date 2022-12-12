@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>SE_SmokeleafCooker</defName>
+		<label>smokeleaf cooker</label>
+		<description>A device designed to cook smokeleaf without any user attention.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Buildings/SE_SmokeleafCooker</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>	
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+
+		<costList>
+			<Steel>40</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+			
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		
+		<statBases>
+			<Mass>5</Mass>
+			<WorkToBuild>800</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		
+		<tickerType>Rare</tickerType>
+		<size>(1,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		
+		<researchPrerequisites>
+			<li>SE_SmokeleafResearch</li>
+		</researchPrerequisites>
+		
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Buildings/SE_SmokeleafCooker</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<InsertFirstItemDesc>SE_InsertSmokeleafDesc</InsertFirstItemDesc>
+				<transfersIngredientLists>true</transfersIngredientLists>
+
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/SE_SmokeleafReset</resetSemiautomaticIcon>
+
+				<chooseIngredientsIcon>UI/VBE_EmptySyrupIcon</chooseIngredientsIcon>
+
+				<bringIngredientsText>SE_StartInsertion</bringIngredientsText>
+				<bringIngredientsDesc>SE_StartInsertionDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/SE_InsertSmokeleaf</bringIngredientsIcon >
+
+				<cancelIngredientsText>SE_CancelBringingSmokeleaf</cancelIngredientsText> 
+				<cancelIngredientsDesc>SE_CancelBringingSmokeleafDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/SE_CancelSmokeleaf</cancelIngredientsIcon> 
+
+				<noPowerDestroysProgress>true</noPowerDestroysProgress>
+				<rareTicksToDestroy>20</rareTicksToDestroy>
+				<noPowerDestroysMessage>SE_SmokeleafFailurePower</noPowerDestroysMessage>
+
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				<showProgressBar>true</showProgressBar>
+			</li>
+
+			
+		</comps>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+</Defs>

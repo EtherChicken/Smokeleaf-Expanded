@@ -49,7 +49,7 @@
 		<makesAnimalsFlee>true</makesAnimalsFlee>
 
 		<modExtensions>
-		  <li Class="ETH_Smokeleaf_Expanded.ModExtension_SmokeleafHediff">
+		  <li Class="ETH_Smokeleaf_Expanded.ModExtension_DamageWorkerOptions">
 			<addHediffChance>1</addHediffChance>
 			<hediffToAdd>SmokeleafHigh</hediffToAdd>
 			<severity>1</severity>

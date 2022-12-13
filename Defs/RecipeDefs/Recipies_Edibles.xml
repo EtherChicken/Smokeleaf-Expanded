@@ -48,7 +48,6 @@
 		<fixedIngredientFilter>			
 			<thingDefs>
 				<li>SE_CookedSmokeleaf</li>
-				
 			</thingDefs>
 <!--		<categories>
 				
@@ -67,5 +66,9 @@
 		<products>
 			<SE_Edible>5</SE_Edible>
 		</products>
+		
+		<researchPrerequisite>SE_EdibleCooking</researchPrerequisite>
+
+		
 	</RecipeDef>
 </Defs>

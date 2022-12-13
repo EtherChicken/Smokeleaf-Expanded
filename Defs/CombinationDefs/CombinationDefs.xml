@@ -7,12 +7,12 @@
 			<li>SmokeleafLeaves</li>
 		</items>
 		<amount>
-			<li>25</li>
+			<li>50</li>
 		</amount>
 		<result>SE_CookedSmokeleaf</result>
-		<yield>25</yield>
+		<yield>50</yield>
 		<useQualityIncreasing>false</useQualityIncreasing>
-		<singleTimeIfNotQualityIncreasing>.041666</singleTimeIfNotQualityIncreasing> 
-		<!-- Should Be 1 RimWorld hour, 2500 ticks if I understand Oscar's code. he has time at 3f which should be 3 days, so 1f is one day, -->
+		<singleTimeIfNotQualityIncreasing>0.499992</singleTimeIfNotQualityIncreasing> 
+		<!--  .041666 is 1 RimWorld hour, 2500 ticks. 1 is 1 RimWorld day.-->
 	</ItemProcessor.CombinationDef>
 </Defs>

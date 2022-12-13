@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BaseMakeableGrenade">
+  <ThingDef Name="BaseSmokeleafGrenade" ParentName="BaseWeapon" Abstract="True">
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+    <tradeTags>
+      <li>WeaponRanged</li>
+    </tradeTags>
+  </ThingDef>
+
+	<ThingDef ParentName="BaseSmokeleafGrenade">
 		<defName>SE_SmokeleafGrenade</defName>
 		<label>smokeleaf grenade</label>
 		<description>A modified frag grenade with a canister of smokeleaf oil inside that vaporizes when the grenade explodes and creates a cloud of smokeleaf smoke to stone your enemies while they get blown to shreds!</description>
-		<recipeMaker>
-			<researchPrerequisite>Machining</researchPrerequisite>
-		</recipeMaker>
 		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Grenades/SE_Weapon_GrenadeSmokeleaf</texPath>
@@ -19,13 +25,7 @@
 		<statBases>
 			<Mass>1</Mass>
 			<RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
-			<WorkToMake>6000</WorkToMake>
 		</statBases>
-		<costList>
-			<Steel>20</Steel>
-			<Chemfuel>40</Chemfuel>
-			<SE_SmokeleafOil>10</SE_SmokeleafOil>
-		</costList>
 		<weaponTags>
 			<li>GrenadeDestructive</li>
 			<li>EmpireGrenadeDestructive</li>
@@ -33,7 +33,6 @@
 		<thingCategories>
 			<li>Grenades</li>
 		</thingCategories>
-		<smeltable>true</smeltable>
 		<verbs>
 			<li>
 				<label>throw smokeleaf grenade</label>

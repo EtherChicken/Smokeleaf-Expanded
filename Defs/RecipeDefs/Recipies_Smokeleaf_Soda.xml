@@ -57,5 +57,8 @@
 		<products>
 			<SE_SmokeleafSoda>5</SE_SmokeleafSoda>
 		</products>
+		
+		<researchPrerequisite>SE_SmokeleafBrewing</researchPrerequisite>
+		
 	</RecipeDef>
 </Defs>

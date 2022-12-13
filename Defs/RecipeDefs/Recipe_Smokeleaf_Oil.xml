@@ -57,5 +57,9 @@
 		<products>
 			<SE_SmokeleafOil>5</SE_SmokeleafOil>
 		</products>
+		
+		<researchPrerequisite>SE_OilExtraction</researchPrerequisite>
+
+		
 	</RecipeDef>
 </Defs>

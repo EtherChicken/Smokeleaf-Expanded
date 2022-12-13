@@ -53,7 +53,21 @@
 		<description>Allows you to brew smokeleaf-infused drinks.</description>
 		<baseCost>750</baseCost>
 		<researchViewX>2</researchViewX>
-		<researchViewY>2.5</researchViewY>
+		<researchViewY>3</researchViewY>
+		<prerequisites>
+			<li>SE_OilExtraction</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>SE_SmokeleafWarfare</defName>
+		<label>smokeleaf weaponry</label>
+		<tab>SE_Smokeleaf</tab>
+		<techLevel>Industrial</techLevel>
+		<description>Allows you to commit war crimes with smokeleaf.</description>
+		<baseCost>750</baseCost>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2</researchViewY>
 		<prerequisites>
 			<li>SE_OilExtraction</li>
 		</prerequisites>

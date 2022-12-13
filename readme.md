@@ -1,0 +1,2 @@
+Huge thanks to Aelanna#0001 for helping me with my questions, the multiple things would not be in this mod without her
+Another thanks to the entire Vanilla Expanded team, not only does this mod require VEF to run but I was able to look at the XML files and Assemblies (mostly in VBE) and go from there to help create my mod

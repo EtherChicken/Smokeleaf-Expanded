@@ -51,8 +51,8 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Projectile_Smokeleaf.cs" />
-        <Compile Include="ModExtension_ProjectileSmokeleaf.cs" />
+        <Compile Include="DamageWorker_HediffProjectile.cs" />
+        <Compile Include="ModExtension_DamageWorkerOptions.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

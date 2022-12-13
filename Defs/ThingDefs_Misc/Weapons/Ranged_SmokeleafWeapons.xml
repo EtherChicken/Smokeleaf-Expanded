@@ -3,13 +3,6 @@
 
 	<ThingDef ParentName="BaseMakeableGrenade">
 		<defName>SE_SmokeleafGrenade</defName>
-			<modExtensions>
-				<li Class="ETH_Smokeleaf_Expanded.ModExtension_ProjectileSmokeleaf">
-				<addHediffChance>1</addHediffChance>
-				<hediffToAdd>SmokeleafHigh</hediffToAdd>
-				<!-- <thingClass></thingClass> -->
-				</li>
-			</modExtensions>
 		<label>smokeleaf grenade</label>
 		<description>A modified frag grenade with a canister of smokeleaf oil inside that vaporizes when the grenade explodes and creates a cloud of smokeleaf smoke to stone your enemies while they get blown to shreds!</description>
 		<recipeMaker>
@@ -69,14 +62,14 @@
 	</ThingDef>
 	
 	<ThingDef Name="BaseSmokeleafGrenadeProjectile" ParentName="BaseGrenadeProjectile" Abstract="True">
-		<thingClass>ETH_Smokeleaf_Expanded.Projectile_Smokeleaf</thingClass>
+		<thingClass>Projectile_Explosive</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/SE_SmokeleafGrenade</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
 			<explosionRadius>2.24</explosionRadius>
-			<damageDef>Bomb</damageDef>
+			<damageDef>SE_SmokeleafBomb</damageDef>
 			<explosionDelay>100</explosionDelay>
 		</projectile>
 	</ThingDef>

@@ -17,15 +17,37 @@
 		</graphicData>
 		
 		<statBases>
+		<WorkToMake>300</WorkToMake>
 			<MarketValue>20</MarketValue>
 			<Mass>0.01</Mass>
 			<DeteriorationRate>6</DeteriorationRate>
 			<Flammability>.5</Flammability>
 		</statBases>
 	
+		<recipeMaker>
+		  <recipeUsers>
+				<li>ElectricStove</li>
+				<li>FueledStove</li>
+				<li>DrugLab</li>
+			</recipeUsers>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_CookMeal</soundWorking>
+			<productCount>5</productCount>
+      <bulkRecipeCount>4</bulkRecipeCount>
+			<researchPrerequisites>
+				<li>SE_OilExtraction</li>
+			</researchPrerequisites>
+    </recipeMaker>
+		<costList>
+			<SE_CookedSmokeleaf>5</SE_CookedSmokeleaf>
+		</costList>
 		<techLevel>Neolithic</techLevel>
 		
-		
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
 	
 	</ThingDef>
 </Defs>

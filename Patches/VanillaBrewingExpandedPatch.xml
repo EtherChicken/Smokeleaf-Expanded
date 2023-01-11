@@ -10,41 +10,12 @@
 			<operations>
 			
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "SE_MakeSmokeleafSoda"]/ingredients</xpath>
+					<xpath>/Defs/ThingDef[defName = "SE_SmokeleafSoda"]/costList</xpath>
 					<value>
-					
-						<li>
-							<filter>
-								<thingDefs>
-									<li>VBE_Soda</li>
-								</thingDefs>
-							</filter>
-							<count>5</count>
-						</li>
-					
+						<VBE_Soda>5</VBE_Soda>
 					</value>
 				</li>
-			
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "SE_MakeSmokeleafSoda"]/fixedIngredientFilter/thingDefs</xpath>
-					<value>
-					
-						<li>VBE_Soda</li>
-					
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "SE_MakeSmokeleafSoda"]/defaultIngredientFilter/thingDefs</xpath>
-					<value>
-					
-						<li>VBE_Soda</li>
-					
-					</value>
-				</li>
-			
 			</operations>
-		
 		</match>
 		
 		

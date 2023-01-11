@@ -12,7 +12,7 @@
 
 	<ThingDef ParentName="BaseSmokeleafGrenade">
 		<defName>SE_SmokeleafGrenade</defName>
-		<label>smokeleaf grenade</label>
+		<label>smokeleaf grenades</label>
 		<description>A modified frag grenade with a canister of smokeleaf oil inside that vaporizes when the grenade explodes and creates a cloud of smokeleaf smoke to stone your enemies while they get blown to shreds!</description>
 		<tickerType>Normal</tickerType>
 		<graphicData>
@@ -23,6 +23,7 @@
 		<soundInteract>ThrowGrenade</soundInteract>
 		<techLevel>Industrial</techLevel>
 		<statBases>
+		<WorkToMake>12000</WorkToMake>
 			<Mass>1</Mass>
 			<RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
 		</statBases>
@@ -51,6 +52,28 @@
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 			</li>
 		</verbs>
+		
+		<recipeMaker>
+		  <recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+			<researchPrerequisites>
+				<li>SE_SmokeleafWarfare</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    </recipeMaker>
+		<costList>
+			<SE_SmokeleafOil>20</SE_SmokeleafOil>
+			<Steel>20</Steel>
+			<Chemfuel>100</Chemfuel>
+		</costList>
+		
+		
+		
 		<comps>
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>3.24</explosiveRadius>

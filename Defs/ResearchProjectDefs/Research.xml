@@ -70,6 +70,7 @@
 		<researchViewY>2</researchViewY>
 		<prerequisites>
 			<li>SE_OilExtraction</li>
+			<li>Machining</li>
 		</prerequisites>
 	</ResearchProjectDef>
 	

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="DrugBase">
+	<ThingDef ParentName="MakeableDrugBase">
 		<defName>SE_SmokeleafSoda</defName>
 		<label>smokeleaf soda</label>
 		<description>Brings a new meaning to "Cracking a cold one open with the pawns".</description>
@@ -17,6 +17,7 @@
 		</graphicData>
 		
 		<statBases>
+			<WorkToMake>450</WorkToMake>
 			<MarketValue>30</MarketValue>
 			<Mass>0.01</Mass>
 			<DeteriorationRate>6</DeteriorationRate>
@@ -38,7 +39,7 @@
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 				  <hediffDef>SmokeleafHigh</hediffDef>
-				  <severity>.75</severity>
+				  <severity>.9</severity>
 				  <toleranceChemical>Smokeleaf</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
@@ -53,6 +54,23 @@
 				</li>
 			</outcomeDoers>
 		</ingestible>
+		
+		<recipeMaker>
+		  <recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+			<li>DrugLab</li>
+		  </recipeUsers>
+		  <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		  <workSkill>Cooking</workSkill>
+		  <researchPrerequisite>
+				<li>SE_SmokeleafBrewing</li>
+			</researchPrerequisite>
+			<productCount>5</productCount>
+		</recipeMaker>
+		<costList>
+			<SE_SmokeleafOil>5</SE_SmokeleafOil>
+		</costList>
 	
 		<techLevel>Neolithic</techLevel>
 		

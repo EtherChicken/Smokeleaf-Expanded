@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="DrugBase">
+	<ThingDef ParentName="MakeableDrugBase">
 		<defName>SE_Edible</defName>
 		<label>edible</label>
 		<description>A nice baked good with that lovely smokeleaf in it for a better high and no carcinoma!</description>
-		
+		<possessionCount>2</possessionCount>
 		<descriptionHyperlinks>
 			<HediffDef>SmokeleafHigh</HediffDef>
 			<HediffDef>SmokeleafTolerance</HediffDef>
@@ -17,6 +17,7 @@
 		</graphicData>
 		
 		<statBases>
+			<WorkToMake>300</WorkToMake>
 			<MarketValue>20</MarketValue>
 			<Mass>0.01</Mass>
 			<DeteriorationRate>6</DeteriorationRate>
@@ -25,7 +26,7 @@
 		</statBases>
 		
 		<ingestible>
-			<foodType>Plant, Processed</foodType>
+			<foodType>Meal, Processed</foodType>
 			<joyKind>Chemical</joyKind>
 			<joy>.90</joy>
 			<baseIngestTicks>400</baseIngestTicks>
@@ -43,7 +44,7 @@
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
 				  <need>Rest</need>
-				  <offset>-0.1</offset>
+				  <offset>0.1</offset>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 				  <hediffDef>SmokeleafTolerance</hediffDef>
@@ -53,7 +54,26 @@
 				</li>
 			</outcomeDoers>
 		</ingestible>
+		
+		<recipeMaker>
+		  <recipeUsers>
+				<li>ElectricStove</li>
+				<li>FueledStove</li>
+				<li>DrugLab</li>
+		  </recipeUsers>
+		  <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		  <workSkill>Cooking</workSkill>
+		  <researchPrerequisite>
+				<li>SE_EdibleCooking</li>
+			</researchPrerequisite>
+			<productCount>5</productCount>
+		</recipeMaker>
+		<costList>
+			<SE_CookedSmokeleaf>5</SE_CookedSmokeleaf>
+			<Chocolate>5</Chocolate>
+		</costList>
 	
+		
 		<techLevel>Neolithic</techLevel>
 		<comps>
 		  <li Class="CompProperties_Drug">
@@ -64,7 +84,16 @@
 			<needLevelOffset>0.9</needLevelOffset>
 			<listOrder>20</listOrder>
 		  </li>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>30</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		  </li>
 		</comps>
-	
+		<thingCategories>
+		  <li>Foods</li>
+		</thingCategories>
+		<tickerType>Rare</tickerType>
+		<healthAffectsPrice>false</healthAffectsPrice>
+
 	</ThingDef>
 </Defs>

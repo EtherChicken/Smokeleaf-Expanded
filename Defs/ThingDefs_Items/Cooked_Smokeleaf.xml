@@ -8,17 +8,45 @@
 			
 			<graphicData>
 				<texPath>Things/Item/Resources/SE_CookedSmokeleaf</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>(2,2)</drawSize>
+
 			</graphicData>
 			
 			<statBases>
+				<WorkToMake>250</WorkToMake>
 				<MarketValue>4</MarketValue>
 				<Mass>0.01</Mass>
-				<Flammability>1</Flammability>
+				<DeteriorationRate>6</DeteriorationRate>
 			</statBases>
+			<tickerType>Rare</tickerType>
+			<healthAffectsPrice>false</healthAffectsPrice>
 			
+		<recipeMaker>
+		  <recipeUsers>
+				<li>ElectricStove</li>
+				<li>FueledStove</li>
+				<li>DrugLab</li>
+			</recipeUsers>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_CookMeal</soundWorking>
+      <productCount>5</productCount>
+			<bulkRecipeCount>4</bulkRecipeCount>
+			<researchPrerequisites>
+				<li>SE_SmokeleafResearch</li>
+			</researchPrerequisites>
+    </recipeMaker>
+		<costList>
+			<SmokeleafLeaves>5</SmokeleafLeaves>
+		</costList>
 			<techLevel>Neolithic</techLevel>
 
+
+			<thingCategories>
+				<li>PlantMatter</li>
+			</thingCategories>
+			
 		</ThingDef>
 			
 </Defs>

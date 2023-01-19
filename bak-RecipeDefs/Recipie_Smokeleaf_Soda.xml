@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>SE_MakeSmokeleafSoda</defName>
+		<label>make smokeleaf soda</label>
+		<description>Infuse a drink with Smokeleaf.</description>
+		
+		<descriptionHyperlinks>
+			<ThingDef>SE_CookedSmokeleaf</ThingDef>
+		</descriptionHyperlinks>
+		
+		<jobString>Creating Smokeleaf Soda.</jobString>
+		<workSkill>Cooking</workSkill>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>450</workAmount>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		
+		
+		<recipeUsers>
+		<li>ElectricStove</li>
+		<li>FueledStove</li>
+		<li>DrugLab</li>
+		</recipeUsers>
+		
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SE_SmokeleafOil</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>SE_SmokeleafOil</li>
+				
+			</thingDefs>
+<!--		<categories>
+				
+			</categories> -->
+		</fixedIngredientFilter>
+		
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>SE_SmokeleafOil</li>
+			</thingDefs>
+	<!--	<categories>
+				
+			</categories> -->
+		</defaultIngredientFilter>
+		
+		<products>
+			<SE_SmokeleafSoda>5</SE_SmokeleafSoda>
+		</products>
+		
+		<researchPrerequisite>SE_SmokeleafBrewing</researchPrerequisite>
+		
+	</RecipeDef>
+</Defs>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef>
+		<defName>SE_MakeSmokeleafGrenade</defName>
+		<label>make smokeleaf grenades</label>
+		<description>Make grenades with smokeleaf canisters for your demented shenanigans</description>
+		
+		<jobString>Making smokeleaf grenades.</jobString>
+		<workSkill>Crafting</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workAmount>12000</workAmount>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Smith</soundWorking>
+		
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
+		
+		<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SE_SmokeleafOil</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>SE_SmokeleafOil</li>
+				<li>Steel</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+<!--		<categories>	
+			</categories> -->
+		</fixedIngredientFilter>
+		
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>SE_SmokeleafOil</li>
+				<li>Steel</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+<!--		<categories>
+			</categories> -->
+		</defaultIngredientFilter>
+		
+		<products>
+		<SE_SmokeleafGrenade>1</SE_SmokeleafGrenade>
+		</products>
+		
+		<researchPrerequisite>SE_SmokeleafWarfare</researchPrerequisite>
+
+	</RecipeDef>
+</Defs>

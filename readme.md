@@ -21,5 +21,5 @@ Smokeleaf Soda*
       * Smokeleaf Cooker
       * Smokeleaf Spa (WIP)
 
-* = Without VBE the recipe does not use VBE's soda and in turn is only made with smokeleaf Oil  
+* = Without VBE the recipe does not use VBE's soda and in turn is only made with smokeleaf Oil
 ** = Needs Vanilla Brewing Expanded

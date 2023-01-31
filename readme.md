@@ -9,17 +9,17 @@ Smokeleaf Soda*
 
 # Current Features
 1. Resources
-    ..* Cooked Smokeleaf
-    ..* Smokeleaf Oil
+      * Cooked Smokeleaf
+      * Smokeleaf Oil
 2. Drugs
-    ..* Edibles
-    ..* Smokeleaf Soda*
-    ..* Blunts**
+      * Edibles
+      * Smokeleaf Soda*
+      * Blunts**
 3. Weapons
-    ..* Smokeleaf Grenade
+      * Smokeleaf Grenade
 4. Buildings
-    ..* Smokeleaf Cooker
-    ..* Smokeleaf Spa (WIP)
+      * Smokeleaf Cooker
+      * Smokeleaf Spa (WIP)
 
 * = Without VBE the recipe does not use VBE's soda and in turn is only made with smokeleaf Oil
 ** = Needs Vanilla Brewing Expanded

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <VanillaPsycastsExpanded.PsycasterPathDef>
+    <defName>SE_Smoker</defName>
+    <label>smoker</label>
+    <description>Smoker psycasts are focused on getting people stoned, for whatever reason they see fit.	</description>
+    <!-- <background>UI/Backgrounds/EmpathPath</background> -->
+    <!-- <altBackground>UI/AlternativeBackgrounds/PathBG_Empath</altBackground> -->
+    <tab>Psycasts</tab>
+    <tooltip>Smokers are known to (Add Description after adding abilities)</tooltip>
+		<!-- Uncomment for the meme whenever decide to make that Ethan -->
+		<!-- <requiredMeme>Stoner</requiredMeme> -->
+		<width>950</width>
+		<height>1515</height>
+		<backgroundColor>(37,117,6)</backgroundColor>
+	</VanillaPsycastsExpanded.PsycasterPathDef>
+</Defs>

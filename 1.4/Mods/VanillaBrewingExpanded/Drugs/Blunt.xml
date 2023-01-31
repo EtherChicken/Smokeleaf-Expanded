@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MakeableDrugBase">
+		<defName>SE_Blunt</defName>
+		<label>blunt</label>
+		<description>A blunt made from smokeleaf and tobacco leaves, has a beauty to it. Also can be smoked multiple times(WIP)</description>
+		<possessionCount>1</possessionCount>
+		<descriptionHyperlinks>
+			<HediffDef>SmokeleafHigh</HediffDef>
+			<HediffDef>SmokeleafTolerance</HediffDef>
+			<HediffDef>SmokeleafAddiction</HediffDef>
+		</descriptionHyperlinks>
+		
+		<graphicData>
+			<texPath>Things/Item/Drugs/SE_Blunt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<MarketValue>1000</MarketValue>
+			<Mass>0.01</Mass>
+			<Flammability>.5</Flammability>
+			<Nutrition>.25</Nutrition>
+			<Beauty>50</Beauty>
+		</statBases>
+		
+    <stackLimit>1</stackLimit>
+		
+		<ingestible>
+			<foodType>Meal, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>.90</joy>
+			<baseIngestTicks>720</baseIngestTicks>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestEffect>Smoke_Joint</ingestEffect>
+			<ingestSound>Ingest_Smoke</ingestSound>
+			<ingestCommandString>Smoke {0}</ingestCommandString>
+			<ingestReportString>Smoke {0}.</ingestReportString>
+			<ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.27,0,0.08)</offset>
+          <behind>true</behind>
+        </northDefault>
+        <east>
+          <offset>(0.45,0,0.08)</offset>
+        </east>
+        <south>
+          <offset>(0.27,0,0.08)</offset>
+        </south>
+        <west>
+          <offset>(-0.50,0,0.08)</offset>
+          <flip>true</flip>
+        </west>
+      </ingestHoldOffsetStanding>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				  <hediffDef>SmokeleafHigh</hediffDef>
+				  <severity>.75</severity>
+				  <toleranceChemical>Smokeleaf</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+				  <need>Rest</need>
+				  <offset>0.1</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				  <hediffDef>SmokeleafTolerance</hediffDef>
+				  <severity>0.030</severity>
+				  <divideByBodySize>true</divideByBodySize>
+				  <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		
+		<recipeMaker>
+		  <recipeUsers>
+				<li>DrugLab</li>
+		  </recipeUsers>
+		  <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		  <workSkill>Cooking</workSkill>
+		  <researchPrerequisite>
+				<li>SE_SmokeleafResearch</li>
+			</researchPrerequisite>
+			<productCount>1</productCount>
+		</recipeMaker>
+		<costList>
+			<VBE_RawTobacco>50</VBE_RawTobacco>
+			<SE_CookedSmokeleaf>50</SE_CookedSmokeleaf>
+		</costList>
+	
+		
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		  <li Class="CompProperties_Drug">
+			<chemical>Smokeleaf</chemical>
+			<addictiveness>0.020</addictiveness>
+			<minToleranceToAddict>0.15</minToleranceToAddict>
+			<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+			<needLevelOffset>0.9</needLevelOffset>
+			<listOrder>20</listOrder>
+		  </li>
+			<li Class="CompProperties_Art">
+        <nameMaker>NamerArtCommon</nameMaker>
+        <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li> 
+			<li Class="CompProperties_Reloadable"> <!-- Doesn't work, needs testing. smokes fine but only has one charge.-->
+        <maxCharges>10</maxCharges>
+        <destroyOnEmpty>true</destroyOnEmpty>
+				<hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<displayGizmoWhileDrafted>false</displayGizmoWhileDrafted>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs> 
+		<thingCategories>
+		  <li>Foods</li>
+		</thingCategories>
+		<tickerType>Rare</tickerType>
+		<healthAffectsPrice>false</healthAffectsPrice>
+
+	</ThingDef>
+</Defs>

@@ -1,0 +1,2 @@
+I should need to do a harmony Postfix to JobDriver_Ingest and check for the CompProperties_Reusable comp on any thingdef being ingested
+	then if it comes back true (use a lambda like: "public bool IsReusable => def.

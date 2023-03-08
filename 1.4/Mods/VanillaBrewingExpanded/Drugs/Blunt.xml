@@ -53,24 +53,25 @@
           <offset>(-0.50,0,0.08)</offset>
           <flip>true</flip>
         </west>
-      </ingestHoldOffsetStanding>
-			<outcomeDoers>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-				  <hediffDef>SmokeleafHigh</hediffDef>
-				  <severity>.75</severity>
-				  <toleranceChemical>Smokeleaf</toleranceChemical>
-				</li>
-				<li Class="IngestionOutcomeDoer_OffsetNeed">
-				  <need>Rest</need>
-				  <offset>0.1</offset>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-				  <hediffDef>SmokeleafTolerance</hediffDef>
-				  <severity>0.030</severity>
-				  <divideByBodySize>true</divideByBodySize>
-				  <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
-				</li>
-			</outcomeDoers>
+				</ingestHoldOffsetStanding>
+				<!-- Look at VBE Cigars to do mood boost and nicotine high and stuff -->
+				<outcomeDoers>
+					<li Class="IngestionOutcomeDoer_GiveHediff">
+						<hediffDef>SmokeleafHigh</hediffDef>
+						<severity>.75</severity>
+						<toleranceChemical>Smokeleaf</toleranceChemical>
+					</li>
+					<li Class="IngestionOutcomeDoer_OffsetNeed">
+						<need>Rest</need>
+						<offset>0.1</offset>
+					</li>
+					<li Class="IngestionOutcomeDoer_GiveHediff">
+						<hediffDef>SmokeleafTolerance</hediffDef>
+						<severity>0.030</severity>
+						<divideByBodySize>true</divideByBodySize>
+						<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+					</li>
+				</outcomeDoers>
 		</ingestible>
 		
 		<recipeMaker>
@@ -108,13 +109,9 @@
         <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
         <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li> 
-			<li Class="CompProperties_Reloadable"> <!-- Doesn't work, needs testing. smokes fine but only has one charge.-->
-        <maxCharges>10</maxCharges>
+			<li Class="ETH_CompProperties_Reusable"> <!-- Literally not sure what to do, think I have to make a verb -->
+        <maxCharges>5</maxCharges>
         <destroyOnEmpty>true</destroyOnEmpty>
-				<hotKey>Misc4</hotKey>
-        <chargeNoun>charge</chargeNoun>
-        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-				<displayGizmoWhileDrafted>false</displayGizmoWhileDrafted>
       </li>
     </comps>
     <inspectorTabs>

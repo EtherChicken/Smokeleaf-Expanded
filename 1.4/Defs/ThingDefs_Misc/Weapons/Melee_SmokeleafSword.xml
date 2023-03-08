@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MeleeWeaponUltratech">
+		<defName>SE_SmokeleafSword</defName>
+		<label>smokeleaf sword</label>
+		<description>A sword which has a mechanism to make smokeleaf oil constantly excrete to the blade, so when a person is hit they become high.</description>
+		<possessionCount>1</possessionCount>
+		<soundInteract>Interact_MonoSword</soundInteract>
+		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<relicChance>3</relicChance>
+		<smeltable>false</smeltable>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SmokeleafSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIcionScale>1.2</uiIcionScale>
+		<techLevel>Industrial</techLevel>
+		<costStuffCount>100</costStuffCount>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.2</armorPenetration>
+				<extraMeleeDamages>
+					<li>
+						<def>SE_SmokeleafMelee</def>
+						<amount>5</amount>
+						<chance>1</chance>
+					</li>
+				</extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.2</armorPenetration>
+				<extraMeleeDamages>
+					<li>
+						<def>SE_SmokeleafMelee</def>
+						<amount>5</amount>
+						<chance>1</chance>
+					</li>
+				</extraMeleeDamages>
+      </li>
+    </tools>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>SE_SmokeleafWarfare</li>
+			</researchPrerequisites>
+			<researchPrerequisite></researchPrerequisite>
+			<displayPriority>405</displayPriority>
+		</recipeMaker>
+		
+	</ThingDef>
+
+
+</Defs>	

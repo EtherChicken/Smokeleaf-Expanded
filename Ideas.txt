@@ -1,0 +1,1 @@
+New Weapon trait for linked weapons - must smoke smokeleaf
